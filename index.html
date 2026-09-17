@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#06151d">
+<title>TIDEBREAKER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+<canvas id="game"></canvas>
+<header id="hud">
+  <strong>TIDEBREAKER</strong>
+  <span>DEPTH <b id="depth">0</b>m</span>
+  <span>SCRAP <b id="scrap">0</b></span>
+  <span>BEST <b id="best">0</b>m</span>
+</header>
+<div id="oxygen"><i id="oxybar"></i><b id="oxy">100</b>% O₂</div>
+
+<section id="start" class="screen">
+  <div class="mark">⚓</div>
+  <h1>TIDE<br><em>BREAKER</em></h1>
+  <p>Dive beneath the dead sea.</p>
+  <button id="play">DIVE</button>
+  <small>Hold and drag to steer your sub</small>
+</section>
+
+<section id="over" class="screen hidden">
+  <div class="mark">◈</div>
+  <h2>PRESSURE CRITICAL</h2>
+  <p><b id="endDepth">0</b>m deep • <b id="endScrap">0</b> scrap recovered</p>
+  <button id="again">DIVE AGAIN</button>
+</section>
+<div id="toast"></div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
